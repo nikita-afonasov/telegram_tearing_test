@@ -1,0 +1,93 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.todoWrapper {
+  width: 300px;
+  /* max-width: 150px; */
+  height: 55px;
+  margin: 5px;
+  flex-basis: 45%;
+  user-select: none;
+  position: relative;
+}
+
+.todo {
+  /* width: 150px;
+  height: 150px; */
+  border-radius: 2px;
+  justify-content: center;
+  background: adjust-hue("yellow", 5%);
+  /* background-image: url("https://www.transparenttextures.com/patterns/embossed-paper.png"); */
+  border: none;
+  box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.2),
+    0px 2px 2px 0px rgba(0,0,0,0.04) ;
+  position: absolute;
+  left: -5;
+}
+
+.swiper {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.backPaper {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  /* width: 10px; */
+  color: "blue";
+  background-color: 'blue';
+  z-index: 5;
+  box-shadow: 4px 5px 15px -2px rgba(0,0,0,0.4);
+  background-image: url('./assets/top_inversed.png');
+}
+
+.frontPaper {
+  width: 150px;
+  height: 150px;
+  position: absolute; 
+  background: 'blue';
+}
