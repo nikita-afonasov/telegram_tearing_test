@@ -9,7 +9,9 @@ type MyComponentProps = {
 }
 
 export default function SwipeTodo({children}: MyComponentProps) {
+  // @ts-ignore
   const [{x, y}, set] = useSpring(() => ({x: 0, y: 0}));
+  // @ts-ignore
   const bindSwipe = useDrag(({down, movement: [mx, my], velocity}) => {
     let realisticX = Math.min(mx / 2, 230);
     let realisticY = my;

@@ -2,8 +2,6 @@ import bottomImg from './assets/bottom.png'
 import './App.css'
 import Todo from './Todo'
 
-import WebApp from '@twa-dev/sdk'
-
 function App() {
   return (
     <>
